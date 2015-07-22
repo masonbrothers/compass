@@ -162,13 +162,13 @@ updateLabels();
 
 if(window.DeviceOrientationEvent)
 {
-	statusLabel.innerHTML = "Works<br>";
+	//statusLabel.innerHTML = "Works<br>";
 	//webAppLabel.style.display = "none";
 }
 else 
 {
-	statusLabel.innerHTML = "Does not work<br>";
-	//webAppLabel.style.display = "none";
+	statusLabel.innerHTML = "Sorry! You do not have orientation events activated. This application requires orientation events.<br>";
+	webAppLabel.style.display = "none";
 }
 
 //document.write("<br>end<br>");
